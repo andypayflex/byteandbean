@@ -668,6 +668,259 @@ p {
     margin-bottom: 0;
 }
 
+/* ========================================
+   Menu Page Styles
+   ======================================== */
+
+.menu-hero {
+    background: linear-gradient(135deg, var(--color-navy) 0%, var(--color-teal) 100%);
+    padding: 140px 0 80px;
+    text-align: center;
+}
+
+.menu-hero h1 {
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.menu-hero .highlight {
+    color: var(--color-coffee-light);
+}
+
+.menu-hero p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.25rem;
+    margin-bottom: 0;
+}
+
+.menu-page {
+    padding: 60px 0;
+    background-color: var(--color-cream);
+}
+
+.menu-section {
+    background-color: var(--color-white);
+    border-radius: var(--radius-lg);
+    padding: 40px;
+    margin-bottom: 40px;
+    box-shadow: var(--shadow-md);
+}
+
+.menu-section-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.menu-section-header h2 {
+    margin-bottom: 8px;
+}
+
+.menu-section-header p {
+    color: var(--color-gray);
+    margin-bottom: 0;
+}
+
+.menu-category {
+    margin-bottom: 40px;
+}
+
+.menu-category:last-child {
+    margin-bottom: 0;
+}
+
+.menu-category h3 {
+    color: var(--color-teal);
+    font-size: 1.25rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--color-cream);
+}
+
+.menu-items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.menu-item {
+    padding: 20px;
+    background-color: var(--color-cream);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.menu-item:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.menu-item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.menu-item h4 {
+    color: var(--color-navy);
+    font-family: var(--font-body);
+    font-weight: 600;
+    margin: 0;
+}
+
+.menu-price {
+    font-weight: 700;
+    color: var(--color-teal);
+    font-size: 1.1rem;
+}
+
+.menu-item p {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.menu-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.menu-tag.popular {
+    background-color: var(--color-coffee);
+    color: var(--color-white);
+}
+
+.menu-tag.vegetarian {
+    background-color: #22c55e;
+    color: var(--color-white);
+}
+
+.menu-tag.vegan {
+    background-color: #16a34a;
+    color: var(--color-white);
+}
+
+.menu-tag.local {
+    background-color: var(--color-teal);
+    color: var(--color-white);
+}
+
+.menu-addons {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: var(--color-cream);
+    border-radius: var(--radius-md);
+}
+
+.menu-addons h4 {
+    color: var(--color-navy);
+    margin-bottom: 12px;
+    font-size: 1rem;
+}
+
+.addon-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.addon-list span {
+    color: var(--color-gray);
+    font-size: 0.9rem;
+}
+
+.addon-list strong {
+    color: var(--color-teal);
+    margin-left: 4px;
+}
+
+/* Coffee menu grid */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.menu-items.compact {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.menu-item-simple {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 0;
+    border-bottom: 1px solid var(--color-cream);
+}
+
+.menu-item-simple:last-child {
+    border-bottom: none;
+}
+
+.menu-item-simple span:first-child {
+    color: var(--color-black);
+}
+
+.menu-item-simple .menu-price {
+    font-size: 1rem;
+}
+
+/* Sweet treats horizontal */
+.menu-items-horizontal {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.menu-item-card {
+    text-align: center;
+    padding: 24px 16px;
+    background-color: var(--color-cream);
+    border-radius: var(--radius-md);
+    transition: var(--transition);
+}
+
+.menu-item-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+.menu-item-card h4 {
+    color: var(--color-navy);
+    font-family: var(--font-body);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.menu-item-card .menu-price {
+    font-size: 1rem;
+}
+
+/* Menu CTA */
+.menu-cta {
+    background-color: var(--color-navy);
+    padding: 80px 0;
+    text-align: center;
+}
+
+.menu-cta h2 {
+    color: var(--color-white);
+    margin-bottom: 16px;
+}
+
+.menu-cta p {
+    color: var(--color-gray-light);
+    font-size: 1.1rem;
+    margin-bottom: 32px;
+}
+
 /* Responsive Design */
 @media (max-width: 1024px) {
     .about-grid,
@@ -679,6 +932,14 @@ p {
     }
 
     .workspace-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .menu-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-items-horizontal {
         grid-template-columns: repeat(2, 1fr);
     }
 
@@ -763,6 +1024,18 @@ p {
         grid-template-columns: 1fr;
     }
 
+    .menu-items {
+        grid-template-columns: 1fr;
+    }
+
+    .menu-section {
+        padding: 24px;
+    }
+
+    .menu-items-horizontal {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
     .gallery-grid {
         grid-template-columns: 1fr;
     }
@@ -797,5 +1070,18 @@ p {
         padding: 14px 28px;
         font-size: 1rem;
         width: 100%;
+    }
+
+    .menu-hero {
+        padding: 120px 0 60px;
+    }
+
+    .menu-items-horizontal {
+        grid-template-columns: 1fr;
+    }
+
+    .addon-list {
+        flex-direction: column;
+        gap: 10px;
     }
 }
